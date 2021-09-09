@@ -2,6 +2,8 @@
 $pathMicho= "C:\Users\ricardo.garcia\Downloads"
 Set-Location $pathMicho
 $files =   Get-ChildItem -File  #Matriz de archivos 
+Write-Host "Archivos encontrados:"
+#$files.count"
 Write-Host "Se imprimiran los siguientes archivos .txt: "
 Foreach($archivo in $files){
     if($archivo.Extension -eq ".txt"){
